@@ -27,4 +27,10 @@
 - Moq: для создания мок-объектов.
 - In-Memory Database: для создания in-memory базы данных в тестах.
 
-Для запуска тестов можно воспользоваться консолью, используя команду ```dotnet test ```, либо же кликнув по проекту и запустить тест 
+Для запуска тестов можно воспользоваться консолью, используя команду ```dotnet test ```, либо же кликнув по проекту и запустить тесты.
+
+### Описание тестов
+
+Проект содержит основные тесты для DeliveryOrdersController, включая:
+- GetFilteredOrders_ReturnsOkResult_WithCorrectOrders: Проверяет, что метод GetFilteredOrders возвращает OkObjectResult с корректными заказами.
+- GetFilteredOrders_ReturnsNotFound_WhenNoOrdersMatch: Проверяет, что метод возвращает NotFoundObjectResult и записывает сообщение в лог, если заказы не найдены.
